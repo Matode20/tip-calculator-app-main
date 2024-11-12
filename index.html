@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Tip calculator app</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body
+    class="bg-[#C5E4E7] flex flex-col justify-center h-fit items-center p-10 gap-10"
+  >
+    <h2 class="space-mono-bold text-[#5F8183] tracking-[0.5rem]">
+      SPLI <br />
+      TTER
+    </h2>
+    <section class="bg-[#ffff] h-fit w-full p-10 flex-col flex rounded-xl">
+      <section class="h-fit flex flex-col gap-5">
+        <div class="flex flex-col gap-5">
+          <p class="space-mono-regular text-[#97AAAB]">Bill</p>
+          <input type="number" class="bg-[#f3f8fb]" placeholder="$" />
+        </div>
+        <div class="text-space-mono-bold flex flex-col gap-5">
+          <p class="text-[#97AAAB] space-mono-regular">Selcet Tip %</p>
+          <div class="grid grid-cols-2 rounded-lg gap-5">
+            <button class="bg-[#00474B] hover: text-white">5%</button>
+            <button class="bg-[#00474B] text-white">10%</button>
+            <button class="bg-[#00474B] text-white">15%</button>
+            <button class="bg-[#00474B] text-white">25%</button>
+            <button class="bg-[#00474B] text-white">50%</button>
+            <button class="justify-end">
+              <input
+                class="text-[#00474b]"
+                placeholder="Custom"
+                type="number"
+              />
+            </button>
+          </div>
+        </div>
+        <div class="flex flex-col gap-5">
+          <p class="text-[#97AAAB] space-mono-regular">Number of People</p>
+          <input class="bg-[#f3f8fb]" type="number" />
+        </div>
+      </section>
+      <section
+        class="bg-[#00474B] rounded-lg p-5 items-center flex flex-col gap-5"
+      >
+        <div class="flex items-center space-x-16">
+          <div class="flex flex-col items-start">
+            <p class="text-white space-mono-regular">Tip Amount</p>
+            <p class="text-[#628B92] space-mono-regular text-sm">/person</p>
+          </div>
+          <p class="space-mono-bold text-[#28C1AD]">$4.27</p>
+        </div>
+        <div class="flex items-center space-x-20">
+          <div class="flex flex-col items-start">
+            <p class="text-white space-mono-regular">Total</p>
+            <p class="text-[#628B92] space-mono-regular text-sm">/person</p>
+          </div>
+          <p class="space-mono-bold text-[#28C1AD]">$32.79</p>
+        </div>
+        <button
+          class="text-[#00474b] space-mono-bold bg-[#28C1AD] flex justify-self-center w-full justify-center rounded-lg"
+        >
+          RESET
+        </button>
+      </section>
+    </section>
+  </body>
+</html>
