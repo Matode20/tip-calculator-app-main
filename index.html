@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./index.css" />
     <link
       rel="icon"
       type="image/png"
@@ -31,6 +32,7 @@
       href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
       rel="stylesheet"
     />
+    <script type="module" defer src="./index.js"></script>
   </head>
   <body
     class="bg-[#C5E4E7] flex flex-col justify-center h-fit items-center p-10 gap-10"
@@ -43,17 +45,19 @@
       <section class="h-fit flex flex-col gap-5">
         <div class="flex flex-col gap-5">
           <p class="space-mono-regular text-[#97AAAB]">Bill</p>
-          <input type="number" class="bg-[#f3f8fb]" placeholder="$" />
+          <input id="bill" type="number" class="bg-[#f3f8fb]" placeholder="$" />
         </div>
         <div class="text-space-mono-bold flex flex-col gap-5">
           <p class="text-[#97AAAB] space-mono-regular">Selcet Tip %</p>
           <div class="grid grid-cols-2 rounded-lg gap-5">
-            <button class="bg-[#00474B] hover: text-white">5%</button>
-            <button class="bg-[#00474B] text-white">10%</button>
-            <button class="bg-[#00474B] text-white">15%</button>
-            <button class="bg-[#00474B] text-white">25%</button>
-            <button class="bg-[#00474B] text-white">50%</button>
-            <button class="justify-end">
+            <button id="five" class="bg-[#00474B] hover: text-white">5%</button>
+            <button id="ten" class="bg-[#00474B] text-white">10%</button>
+            <button id="fifteen" class="bg-[#00474B] text-white">15%</button>
+            <button id="twenty-five" class="bg-[#00474B] text-white">
+              25%
+            </button>
+            <button id="fifty" class="bg-[#00474B] text-white">50%</button>
+            <button id="custom" class="justify-end">
               <input
                 class="text-[#00474b]"
                 placeholder="Custom"
